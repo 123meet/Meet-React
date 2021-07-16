@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>object destructuring</h1>
+
+    <script>
+        let mine= {
+            name:"jatin",
+            age:21,
+            surname:"porwal",
+            graduate:"B.tech",
+        }
+
+            // getting data one by one using keys 
+        // let n= mine.name;
+        // console.log(n);
+        // let p= mine.age;
+        // console.log(p);
+        // let q= mine.surname;
+        // console.log(q);
+        // let r= mine.graduate;
+        // console.log(r);
+
+
+        // getting individual data with keys 
+        let {name,age} = mine;
+        console.log(name,age);
+
+        // getting all data using spread operators 
+        let {...details} = mine;
+        console.log(details);
+    </script>
+</body>
+</html>

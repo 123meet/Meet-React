@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript filter</h1>
+    <p>Click the button to get every element in the array that has a value above this number.</p>
+
+    <p><input type="text" id="cage" value="jatin"></p>
+    <button onclick="c2()">click me</button>
+
+    <p id="demo"></p>
+    
+
+
+    <script>
+        const  names = ["meet", "jay", "jatin"];
+
+        function Cname(name){
+            return name !== document.getElementById('cage').value;
+        }
+
+        function c2(){
+            document.getElementById('demo').innerHTML = names.filter(Cname);
+        }
+    </script>
+
+</body>
+</html>

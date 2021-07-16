@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>promises in javascript</h1>
+
+
+
+    <script>
+        console.log('promise tutorial');
+
+        function pro(){
+            return new Promise(function(resolve,reject){
+                setTimeout(() => {
+                    const name = "meet";
+                    if(name !== "meet"){
+                        console.log('your promise has been resolved');
+                        resolve();
+                    }
+                    else{
+                        console.log('your promise has been rejected');
+                        reject();
+                    }
+                }, 2000);
+            })
+        }
+
+        pro().then(function(){
+            console.log("thanks for resolving");
+        }).catch(function(){
+            console.log("not bad: Promise");
+        })
+    </script>
+</body>
+</html>

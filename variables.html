@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>const, let & var</h1>
+
+    <script>
+        // var in javascript
+        var c=24;
+        function Sub(d){
+            var c=12;
+            return d-c;
+        }
+
+        // var c=25;
+        // console.log(c);
+        console.log(Sub(45));
+
+        // let in es6 javascript
+      let b = 20;
+
+      function add(a) {
+        // here let was defined in a block we can use these
+        let b = 25;
+        return a + b;
+      }
+
+      // we cannot define let double in a single block
+    //   let b = 23;
+    //   console.log(b);
+
+      console.log(add(10));
+
+    //   const in es6 javascript 
+      const f=45;
+    //   we can not define one variable more than once and can't change its value  
+      const f=54;
+      console.log(f);
+    </script>
+  </body>
+</html>

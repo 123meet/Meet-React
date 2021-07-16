@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript Practice</h1>
+
+
+
+    <script>
+        let names = ["meet","jay","jatin","rohan","jatin","sohan","meet","sohan","rohan","jay"];
+        // using set method output only in a set form 
+        const assign2 = new Set(names);
+        console.log(assign2)
+
+        // using set method spread operator to show output in a array from 
+
+        const assign3 = [... new Set(names)]
+        console.log(assign3)
+
+        // using filter method 
+        const assignment = names.filter((value,index) => {
+            return names.indexOf(value) === index;
+        });
+
+        console.log(assignment)
+    </script>
+</body>
+</html>

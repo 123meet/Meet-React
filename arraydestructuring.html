@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>array destrucutring</h1>
+
+    <script>
+        let arr = ["meet","jay","jatin","rohan","jatin","sohan","meet","sohan","rohan","jay"];
+        
+        //  simple method of getting array objects in javascript 
+        let a1= arr[1];
+        console.log(a1);
+        let a2= arr[2];
+        console.log(a2);
+        let a3= arr[3];
+        console.log(a3);
+        let a4= arr[4];
+        console.log(a4);
+        let a5= arr[5];
+        console.log(a5);
+        let a6= arr[6];
+        console.log(a6);
+
+
+        // example of array destructuring
+        [first, second,third]=arr;
+        console.log(first, second,third);
+        
+
+        //  modern method of getting array objects in javascript using spreasd operators and array destructuring
+        [...names] = arr;
+        console.log(names);
+
+        // if we know the fourth value then insert and other we will get through spread operators 
+        [f,s,t,f,...namess] = arr;
+        console.log(namess);
+    </script>
+</body>
+</html>
